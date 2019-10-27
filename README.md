@@ -12,12 +12,12 @@ Things you may want to cover:
 * Database: PostgreSQL
 
 * How to run project:
-	git clone https://github.com/Sasha-San/watch_rails.git
-	bundle install
-	rake db:create
-	rake db:migrate
-	rake db:seed
-	rails s
+	* git clone https://github.com/Sasha-San/watch_rails.git
+	* bundle install
+	* rake db:create
+	* rake db:migrate
+	* rake db:seed
+	* rails s
 	
 
 * Do something awesome ! 
