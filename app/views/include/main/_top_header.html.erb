@@ -1,0 +1,79 @@
+<div class="top-header">
+  <div class="container">
+    <div class="top-header-main">
+      <div class="col-md-6 top-header-left">
+        <div class="drop">
+          <div class="box">
+            <select tabindex="4" class="dropdown drop">
+              <option value="" class="label">Dollar :</option>
+              <option value="1">Dollar</option>
+              <option value="2">Euro</option>
+            </select>
+          </div>
+          <div class="box1">
+            <select tabindex="4" class="dropdown">
+              <option value="" class="label">English :</option>
+              <option value="1">English</option>
+              <option value="2">French</option>
+              <option value="3">German</option>
+            </select>
+          </div>
+          <div class="btn-group">
+            <a class="dropdown-toggle" data-toggle="dropdown">Account <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <% if user_signed_in? %>
+                <% if current_user.try(:admin?) %>
+                  <li>
+                    <%= link_to 'administrator', '#', style: "color: red" %>
+                  </li>
+                  <li>
+                    <%= link_to 'API', '/oauth/applications', style: "color: blue" %>
+                  </li>
+                <% end %>
+                <li>
+                  <a href="#">
+                    Добро пожаловать, <%= current_user.email %>
+                  </a>
+                </li>
+                <li>
+                  <%= link_to 'Выход', destroy_user_session_path, method: :delete %>
+                </li>
+                <li>
+                  <%= link_to 'Редактирование', edit_user_registration_path %>
+                </li>
+              <% else %>
+                <li>
+                  <%= link_to 'Вход', new_user_session_path %>
+                </li>
+                <li>
+                  <%= link_to 'Регистрация', new_user_registration_path %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="col-md-6 top-header-left">
+        <div class="cart box_1">
+
+          <a href="/cart" onclick="getCart(); return false;">
+            <div class="total">
+              <%= image_tag('cart-1.png', alt: "") %>
+              <% if cart_items.any? %>
+                <span class="simpleCart_total">
+                  <%= format("%.2f", cart_total ) %> $
+                </span>
+              <% else %>
+                <span class="simpleCart_total">Empty Cart</span>
+              <% end %>
+
+            </div>
+          </a>
+          <div class="clearfix"> </div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>
