@@ -12,7 +12,7 @@ Things you may want to cover:
 * How to run project:
 	* git clone https://github.com/Sasha-San/watch_rails.git
 	* bundle install
-	* first make comment in devise.rb in 263-264 lines(cooment this lines)
+	* first make comment in devise.rb in 263-264 lines(comment this lines)
 	* rake db:create
 	* rake db:migrate
 	* rake db:seed
