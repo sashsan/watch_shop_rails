@@ -11,6 +11,7 @@ Things you may want to cover:
 
 * How to run project:
 	* git clone https://github.com/Sasha-San/watch_rails.git
+	* delete .idea folder from project
 	* bundle install
 	* first make comment in devise.rb in 263-264 lines(comment this lines)
 	* rake db:create
