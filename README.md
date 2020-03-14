@@ -1,10 +1,10 @@
-# README
+* README
 
-# Ruby version 2.6.3
-# Rails version 5.2.3
-# Database: PostgreSQL
+* Ruby version 2.6.3
+* Rails version 5.2.3
+* Database: PostgreSQL
 
-# How to run project:
+* How to run project:
 
 	* `bundle install`
 	*`git clone https://github.com/sashsan/watch-shop-rails.git`
