@@ -10,6 +10,7 @@ Things you may want to cover:
 * Database: PostgreSQL
 
 * How to run project:
+* `bundle install`
 	`git clone https://github.com/sashsan/watch-shop-rails.git`
 	`bundle install`
 	`first make comment in devise.rb in 263-264 lines(comment this lines)`
