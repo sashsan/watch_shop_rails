@@ -331,5 +331,7 @@ product_attributes.each do |attr|
   Product.create(attr) unless Product.where(attr).first
 end
 
+p '--- database created ---'
+
 # - - - - -
 
